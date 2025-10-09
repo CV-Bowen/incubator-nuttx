@@ -398,7 +398,6 @@ struct boardioc_boot_info_s
 };
 #endif
 
-#if defined(CONFIG_BOARDCTL_RESET) || defined(CONFIG_BOARDCTL_RESET_CAUSE)
 /* Describes the reason of last reset */
 
 enum boardioc_reset_cause_e
@@ -439,7 +438,6 @@ struct boardioc_reset_cause_s
   uint32_t flag;                      /* watchdog number when watchdog reset,
                                        * or soft-reset subreason */
 };
-#endif
 
 #ifdef CONFIG_BOARDCTL_MACADDR
 struct boardioc_macaddr_s
